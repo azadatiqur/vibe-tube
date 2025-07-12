@@ -3,7 +3,7 @@
 //there is a solution to this problem, where we use the import statement to import the dotenv package and then call the config method on it. This will allow us to use the environment variables in our code without having to use require. The solution is as follows:
 import dotenv from "dotenv";
 import connectDB from "./db/index.js";
-import app from "./app.js";
+import { app } from "./app.js";
 import e from "express";
 dotenv.config({ path: "./.env" });
 
